@@ -1,0 +1,21 @@
+:root {
+    --red--: #E10600;
+    --dark-blue--: #15151E;
+}
+
+* {
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Fonte especial */
+@font-face {
+    font-family: 'Formula1-Display-Bold-Bold';
+    src:url('/Font/Formula1-Display-Bold-Bold.ttf.woff') format('woff'),
+        url('/Font/Formula1-Display-Bold-Bold.ttf.svg#Formula1-Display-Bold-Bold') format('svg'),
+        url('/Font/Formula1-Display-Bold-Bold.ttf.eot'),
+        url('/Font/Formula1-Display-Bold-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
