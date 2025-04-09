@@ -9,6 +9,11 @@ header > h1 {
     text-align: center;
 }
 
+div#org {
+    display: flex;
+    flex-direction: row;
+}
+
 aside {
     border-right: solid 2px var(--light-gray--);
 
@@ -31,7 +36,7 @@ a#home , .summary , .related {
     width: 100%;
     border: solid 3px var(--light-gray--);
     border-radius: 7px;
-    padding: 12px;
+    padding: 8px;
 }
 
 a#home:hover {
@@ -44,4 +49,32 @@ a#home:hover {
 .summary , .related {
     align-items: flex-start;
     flex-direction: column;
+}
+
+.related > a {
+    font-size: small;
+    width: 100%;
+
+    border-radius: 5px;
+    padding: 7px;
+    text-decoration: underline;
+}
+
+.summary > h2 {margin: 0 0 10px 8px;}
+.summary > a {
+    font-size: small;
+    width: 100%;
+
+    border-left: solid 5px var(--red--);
+    border-radius: 0 5px 5px 0;
+    padding: 7px;
+}
+
+a:hover {
+    background-color: #00000080;
+    transition: ease-in 100ms;
+}
+
+main {
+    padding: 30px 50px;
 }
