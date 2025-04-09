@@ -11,7 +11,7 @@ header {
     background-color: var(--red--);
     width: 100%;
 
-    padding: 20px 13vw;
+    padding: 20px 7vw;
 }
 
 header > h1 { 
@@ -31,9 +31,10 @@ main {
 
 section {
     border: solid 2px var(--red--);
+    padding: 15px;
 
-    width: 15vw;
-    height: 270px;
+    width: 220px;
+    height: 350px;
 
     display: flex;
     flex-direction: column;
@@ -43,13 +44,13 @@ section {
 
 section:hover {
     transition: ease-in-out 200ms;
-    height: 30vw;
     cursor: pointer;
+    background-color: var(--red-70--);
 }
 
-section > h1 , p{
-    margin: 0 10px;
-}
+section > h1 {
+    font-size: large;
+    margin-top: 10px;}
 
 footer {
     width: 100%;
