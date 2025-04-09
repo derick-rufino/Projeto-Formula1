@@ -2,6 +2,7 @@
     --red--: #E10600;
     --red-70--: #E1060070;
     --dark-blue--: #15151E;
+    --light-gray--: #2D2D34;
 }
 
 * {
@@ -20,3 +21,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* header padrão para as paginas */
+header {
+    background-color: var(--red--);
+    width: 100%;
+
+    padding: 20px 7vw;
+}
+
+body {background-color: var(--dark-blue--);}
+
+a {text-decoration: none;}
