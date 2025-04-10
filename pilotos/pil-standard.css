@@ -18,7 +18,7 @@ aside {
     border-right: solid 2px var(--light-gray--);
 
     width: 270px;
-    height: 80vh;
+    height: 100vh;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -76,5 +76,14 @@ a:hover {
 }
 
 main {
+    width: 70vw;
     padding: 30px 50px;
 }
+
+h2, h3 , h4 , h5 {
+    font-size: larger;
+}
+
+p {line-height: 25pt;}
+
+hr {margin: 20px 0;}

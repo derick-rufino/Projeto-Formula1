@@ -10,6 +10,7 @@
     color: white;
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
 }
 /* Fonte especial */
 @font-face {
