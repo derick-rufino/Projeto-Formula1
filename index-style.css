@@ -30,6 +30,7 @@ section {
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     overflow: hidden;
 }
@@ -40,9 +41,7 @@ section:hover {
     background-color: var(--red-70--);
 }
 
-section > h1 {
-    font-size: large;
-    margin-top: 10px;}
+div > h1 {font-size: large;}
 
 footer {
     padding: 0 20px;
