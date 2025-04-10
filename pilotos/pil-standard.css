@@ -19,14 +19,14 @@ aside {
 
     width: 270px;
     height: 100vh;
-    padding: 20px;
+    padding: 0 20px 20px;
     position: sticky;
     top: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 a#home , .summary , .related {
@@ -36,7 +36,7 @@ a#home , .summary , .related {
     width: 100%;
     border: solid 3px var(--light-gray--);
     border-radius: 7px;
-    padding: 8px;
+    padding: 12px 8px;
 }
 
 a#home:hover {
@@ -82,8 +82,15 @@ main {
 
 h2, h3 , h4 , h5 {
     font-size: larger;
+    border-left: solid 5px var(--red--);
+    padding: 5px 10px;
 }
 
-p {line-height: 25pt;}
+section > h2 {border: none; padding: 0;} /* corrigindo o uso do h2 do main */
+
+p {
+    line-height: 25pt;
+    padding-left: 15px;
+}
 
 hr {margin: 20px 0;}
