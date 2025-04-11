@@ -22,7 +22,9 @@ main {
 }
 
 section {
-    border: solid 2px var(--red--);
+    margin: 0 10px;
+    border: solid 3px var(--light-gray--);
+    border-radius: 5px;
     padding: 15px;
 
     width: 220px;
@@ -36,10 +38,13 @@ section {
 }
 
 section:hover {
+    border: solid 3px var(--red--) ;
     transition: ease-in-out 200ms;
     cursor: pointer;
     background-color: var(--red-70--);
 }
+
+section > img {border-radius: 3px;}
 
 div > h1 {font-size: large;}
 

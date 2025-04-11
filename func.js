@@ -17,3 +17,18 @@ function piquetSection(){
 function paceSection(){
     window.location.assign("/pilotos/pace.html");
 }
+
+// horizontal scroll function
+const container = document.getElementById("images");
+        container.addEventListener("wheel", function (e) {
+        if (e.deltaY > 0) {
+            container.scrollLeft += 400;
+            e.preventDefault();
+            // prevenDefault() will help avoid worrisome 
+            // inclusion of vertical scroll 
+        }
+        else {
+            container.scrollLeft -= 400;
+            e.preventDefault();
+        }
+    });
