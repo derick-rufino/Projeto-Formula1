@@ -23,7 +23,7 @@ main {
 
 section {
     margin: 0 10px;
-    border: solid 3px var(--light-gray--);
+    border: solid 3px var(--gray--);
     border-radius: 5px;
     padding: 15px;
 

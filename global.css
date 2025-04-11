@@ -1,8 +1,19 @@
 :root {
     --red--: #E10600;
     --red-70--: #E1060070;
-    --dark-blue--: #15151E;
-    --light-gray--: #2D2D34;
+    --bg-blue--: #15151E;
+    --gray--: #2D2D34;
+}
+
+ @media (prefers-color-scheme: light){
+    :root {
+        --red--: #E10600;
+        --red-70--: #E1060070;
+        --bg-blue--: #efefff;
+        --gray--: #aaaac2;
+    }
+
+    h1,h2,h3,h4,h5,h6,p,a,strong {color:#15151E;}
 }
 
 * {
@@ -31,6 +42,6 @@ header {
     padding: 20px 7vw;
 }
 
-body {background-color: var(--dark-blue--);}
+body {background-color: var(--bg-blue--);}
 
 a {text-decoration: none;}

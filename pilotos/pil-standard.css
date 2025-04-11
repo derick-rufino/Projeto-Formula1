@@ -15,7 +15,7 @@ div#org {
 }
 
 aside {
-    border-right: solid 2px var(--light-gray--);
+    border-right: solid 2px var(--gray--);
 
     width: 270px;
     height: 100vh;
@@ -34,7 +34,7 @@ a#home , .summary , .related {
     align-items: center;
 
     width: 100%;
-    border: solid 3px var(--light-gray--);
+    border: solid 3px var(--gray--);
     border-radius: 7px;
     padding: 12px 8px;
 }
@@ -42,8 +42,8 @@ a#home , .summary , .related {
 a#home:hover {
     transition: ease-in-out 200ms;
     border: solid 3px var(--red--);
-    background-color: white;
-    color: var(--dark-blue--);
+    background-color: var(--bg-blue--);
+    color: var(--blk-wht--);
 }
 
 .summary , .related {
@@ -93,9 +93,7 @@ main {
     gap: 20px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
-
-    background-color: #00000050;
+    scroll-snap-align: start;;
 }
 
 ::-webkit-scrollbar {display: none;}
