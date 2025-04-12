@@ -125,10 +125,10 @@ hr {margin: 20px 0;}
     width: fit-content;
     font-size: .7em;
 
-    border: solid 2px var(--light-gray--);
+    border: solid 2px var(--gray--);
     border-radius: 100px;
     padding: 10px 20px;
-    background-color: var(--dark-blue--);
+    background-color: var(--bg-blue--);
 
     display: flex;
     align-items: center;
