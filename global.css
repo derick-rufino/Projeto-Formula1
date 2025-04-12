@@ -1,19 +1,22 @@
 :root {
     --red--: #E10600;
     --red-70--: #E1060070;
-    --bg-blue--: #15151E;
+    --dark-blue--: #15151E;
     --gray--: #2D2D34;
+    --blk-wht--: #15151E;
 }
 
  @media (prefers-color-scheme: light){
     :root {
         --red--: #E10600;
         --red-70--: #E1060070;
-        --bg-blue--: #efefff;
         --gray--: #aaaac2;
+        --blk-wht--: white;
     }
 
-    h1,h2,h3,h4,h5,h6,p,a,strong {color:#15151E;}
+    h1,h2,h3,h4,h5,h6,p,a,strong {color:var(--dark-blue--);}
+
+    header > h1 , header > h2 , footer > p{color: var(--blk-wht--);}
 }
 
 * {
@@ -42,6 +45,6 @@ header {
     padding: 20px 7vw;
 }
 
-body {background-color: var(--bg-blue--);}
+body {background-color: var(--blk-wht--);}
 
 a {text-decoration: none;}
