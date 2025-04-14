@@ -6,7 +6,7 @@
     --blk-wht--: #15151E;
 }
 
- @media (prefers-color-scheme: light){
+ /* @media (prefers-color-scheme: light){
     :root {
         --red--: #E10600;
         --red-70--: #E1060070;
@@ -17,7 +17,7 @@
     h1,h2,h3,h4,h5,h6,p,a,strong {color:var(--dark-blue--);}
 
     header > h1 , header > h2 , footer > p{color: var(--blk-wht--);}
-}
+}*/
 
 * {
     font-family: "Titillium Web", sans-serif;
