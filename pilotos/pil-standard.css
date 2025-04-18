@@ -1,3 +1,5 @@
+
+
 header{
     position: sticky;
     width: 100%;
@@ -126,7 +128,7 @@ hr {margin: 20px 0;}
     border: solid 2px var(--gray--);
     border-radius: 100px;
     padding: 10px 20px;
-    background-color: var(--dark-blue--);
+    background-color: var(--blk-wht--);
 
     display: flex;
     align-items: center;
@@ -140,4 +142,26 @@ hr {margin: 20px 0;}
 #ai-badge:hover {
     border: solid 2px #2e81ff;
     box-shadow: #79afff 0 0 5px 1px;
+}
+
+@media (max-width: 500px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    aside {
+        display: none;
+    }
+
+    main{
+        width: 100%;
+        padding: 5vw;
+    }
+
+    .gallery{
+         height: 20vh;
+    }
 }
