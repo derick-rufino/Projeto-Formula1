@@ -23,6 +23,11 @@
 
         flex-direction: row;
     }
+
+    footer{
+        position: relative !important;
+        bottom: 0;
+    }
 }
 
 body {
@@ -87,7 +92,7 @@ footer {
     height: 10vh;
     background-color: var(--red--);
 
-    position: relative;
+    position: fixed;
     bottom: 0;
 
     font-size: x-small;
