@@ -19,7 +19,6 @@
     header > h1 , header > h2 , footer > p{color: var(--blk-wht--);}
 
     aside > a:hover {background-color: #15151E;}
-
 }
 
 * {

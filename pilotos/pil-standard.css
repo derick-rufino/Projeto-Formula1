@@ -11,6 +11,9 @@ header > h1 {
     text-align: center;
 }
 
+header>a{display: none;}
+nav{display: none;}
+
 div#org {
     display: flex;
     flex-direction: row;
@@ -161,17 +164,40 @@ hr {margin: 20px 0;}
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
 
+        height: 8vh;
+    }
+    a#home{
+        scale: .4;
+        width: 10% !important;
+        border: none !important;
+        padding: 0 !important;
     }
 
-    aside {
-        width: 100%;
-        height: 5vh;
-        background-color: var(--red--);
+    nav{
         display: flex;
-        flex-direction: row;
-        position: fixed;
-        top: 0;
+        border-top: solid 5px var(--dark-blue--);
+        background-color: var(--red--);
+        
+        justify-content: space-evenly;
+
+        position: sticky;
+        top: -5px;
+    }
+    
+    nav > a{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 1vh 5px;
+        color: white;
+    }
+
+    nav > a:hover{background-color: var(--dark-blue--);}
+
+    aside {
+        display: none;
     }
 
     main{
