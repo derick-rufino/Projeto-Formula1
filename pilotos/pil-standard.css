@@ -9,6 +9,9 @@ header > h1 {
     text-align: center;
 }
 
+header>a{display: none !important;}
+nav{display: none;}
+
 div#org {
     display: flex;
     flex-direction: row;
@@ -92,16 +95,28 @@ main {
     gap: 20px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scroll-snap-align: start;;
+    scroll-snap-align: center;
 }
-
-::-webkit-scrollbar {display: none;}
+/* criando uma scrollbar personalizada */
+::-webkit-scrollbar {
+    display: inline;
+    height: 1vh;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--red-70--);
+}
 
 .gallery > img {
     height: 100%;
     border-left: solid 5px var(--red--);
     border-bottom: solid 5px var(--red--);
-    border-radius: 5px;
+    border-radius: 0px;
+
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
 }
 
 h2, h3 , h4 , h5 {
@@ -126,7 +141,7 @@ hr {margin: 20px 0;}
     border: solid 2px var(--gray--);
     border-radius: 100px;
     padding: 10px 20px;
-    background-color: var(--dark-blue--);
+    background-color: var(--blk-wht--);
 
     display: flex;
     align-items: center;
@@ -134,10 +149,65 @@ hr {margin: 20px 0;}
 
     position: fixed;
     bottom: 30px;
-    right: 50px;
+    right: 5vw;
 }
 
 #ai-badge:hover {
     border: solid 2px #2e81ff;
     box-shadow: #79afff 0 0 5px 1px;
+}
+
+@media (max-width: 500px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 8vh;
+    }
+    header>a{
+        display: flex !important;
+        scale: .4;
+        width: 10% !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    header>a{background-color: transparent;}
+
+    nav{
+        display: flex;
+        border-top: solid 5px var(--dark-blue--);
+        background-color: var(--red--);
+        
+        justify-content: space-evenly;
+
+        position: sticky;
+        top: -5px;
+    }
+    
+    nav > a{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 1vh 5px;
+        color: white;
+    }
+
+    nav > a:hover{background-color: var(--dark-blue--);}
+
+    aside {
+        display: none;
+    }
+
+    main{
+        width: 100%;
+        padding: 5vw;
+    }
+
+    .gallery{
+         height: 20vh;
+    }
+
 }
