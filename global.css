@@ -6,7 +6,8 @@
     --blk-wht--: #15151E;
 }
 
-@media (prefers-color-scheme: light){
+/* Modo Claro descartado
+ @media (prefers-color-scheme: light){
     :root {
         --red--: #E10600;
         --red-70--: #E1060070;
@@ -19,7 +20,7 @@
     header > h1 , header > h2 , footer > p{color: var(--blk-wht--);}
 
     aside > a:hover {background-color: #15151E;}
-}
+} */
 
 * {
     font-family: "Titillium Web", sans-serif;

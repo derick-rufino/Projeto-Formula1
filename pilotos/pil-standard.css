@@ -1,5 +1,3 @@
-
-
 header{
     position: sticky;
     width: 100%;
@@ -11,7 +9,7 @@ header > h1 {
     text-align: center;
 }
 
-header>a{display: none;}
+header>a{display: none !important;}
 nav{display: none;}
 
 div#org {
@@ -168,12 +166,15 @@ hr {margin: 20px 0;}
 
         height: 8vh;
     }
-    a#home{
+    header>a{
+        display: flex !important;
         scale: .4;
         width: 10% !important;
         border: none !important;
         padding: 0 !important;
     }
+
+    header>a{background-color: transparent;}
 
     nav{
         display: flex;
@@ -209,5 +210,4 @@ hr {margin: 20px 0;}
          height: 20vh;
     }
 
-    
 }
